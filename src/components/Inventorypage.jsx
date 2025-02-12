@@ -10,7 +10,7 @@ const InventoryPage = () => {
         // Fetch all products from the backend
         const fetchProducts = async () => {
             try {
-                const response = await fetch("https://shoppingpage-in.preview-domain.com/get_products', {
+                const response = await fetch('https://shoppingpage-in.preview-domain.com/get_products', {
                     method: 'GET',
                     headers: { 'Content-Type': 'application/json' },
                 });
