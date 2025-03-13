@@ -26,7 +26,7 @@ const Login=()=>{
         setError(null);
         setSucces(false);
       try{
-        const response=await fetch("https://shoppingpage-in.com/LogInInventory",{
+        const response=await fetch("https://shoppingpage.in/LogInInventory",{
           method:'POST',
           headers:{
             'Content-Type':'application/json',
