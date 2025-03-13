@@ -10,7 +10,7 @@ const InventoryPage = () => {
         // Fetch all products from the backend
         const fetchProducts = async () => {
             try {
-                const response = await fetch('https://shoppingpage-in.preview-domain.com/get_products', {
+                const response = await fetch('https://shoppingpage-in.com/get_products', {
                     method: 'GET',
                     headers: { 'Content-Type': 'application/json' },
                 });
@@ -34,7 +34,7 @@ const InventoryPage = () => {
 
     const handleStockChange = async (productId, newQuantity) => {
         // Update the available quantity for the product
-        const response = await fetch('https://shoppingpage-in.preview-domain.com/update_product_stock', {
+        const response = await fetch('https://shoppingpage-in.com/update_product_stock', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ _id: productId, availableQuant: parseInt(newQuantity) }),
